@@ -114,7 +114,7 @@ Do not create a `CNAME` file before the domain is chosen.
 ## Required pre-publication checklist
 
 - Replace every App Store URL and remove its visible placeholder labels.
-- Replace `support@example.com` in Privacy, Support, and Terms.
+- Confirm that `support@steadkeep.app` forwards correctly to the dedicated support inbox.
 - Replace all app icon, favicon, Apple touch icon, and social image placeholders.
 - Confirm the final color palette in the CSS variables.
 - Have the Privacy Policy reviewed and replace every privacy placeholder.
@@ -143,7 +143,7 @@ Do not create a `CNAME` file before the domain is chosen.
 From the project directory:
 
 ```bash
-rg -n 'PLACEHOLDER|REPLACE|CONFIRM|VERIFY|LEGAL REVIEW|id0000000000|support@example.com' .
+rg -n 'PLACEHOLDER|REPLACE|CONFIRM|VERIFY|LEGAL REVIEW|id0000000000' .
 ```
 
 Run a local server and check the homepage at narrow phone widths, tablet width, and desktop width in current Safari, Chrome, Firefox, and Edge before publishing.

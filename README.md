@@ -91,25 +91,30 @@ The source PNGs are high-resolution and total roughly 8.5 MB. For production, ex
 
 ## GitHub Pages deployment
 
-1. Create a new GitHub repository.
-2. Add the contents of this folder at the repository root.
-3. Commit and push to the default branch.
-4. In the GitHub repository, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select the default branch and `/ (root)`, then save.
-7. Wait for GitHub to show the published URL.
+The site is hosted from the `website-review` branch of
+`steadkeep/steadkeep.github.io`. GitHub Pages publishes the repository root.
+
+To deploy an update:
+
+1. Make and preview the changes locally.
+2. Commit the approved files to `website-review`.
+3. Push the branch to GitHub.
+4. Confirm the Pages deployment succeeds under **Actions** or **Settings → Pages**.
 
 Because the site uses relative links such as `css/styles.css` and `privacy.html`, it works both at a user site (`username.github.io`) and a project site (`username.github.io/repository-name/`).
 
-## Optional custom domain
+## Custom domain
 
-1. Add the domain in **Settings → Pages → Custom domain**.
-2. Follow GitHub’s displayed DNS instructions for an apex domain or subdomain.
-3. After DNS is valid, enable **Enforce HTTPS**.
-4. GitHub will add a `CNAME` file. Keep that file in the repository.
-5. Update Open Graph image URLs and add canonical URLs after the final domain is known.
+The configured production domain is `steadkeep.app`.
 
-Do not create a `CNAME` file before the domain is chosen.
+- Keep the repository’s `CNAME` file.
+- Keep the four GitHub Pages `A` records, four `AAAA` records, and the `www`
+  `CNAME` record in Porkbun.
+- Keep **Enforce HTTPS** enabled in **Settings → Pages**.
+- Do not remove Porkbun’s MX and SPF records; they support
+  `support@steadkeep.app` forwarding.
+- Update Open Graph image URLs and add canonical URLs before the final public
+  launch.
 
 ## Required pre-publication checklist
 

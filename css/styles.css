@@ -1,12 +1,9 @@
-/* ==========================================================================
-   STEADKEEP EDITABLE DESIGN TOKENS
-   Replace the marked final-color values here before publishing.
-   ========================================================================== */
+/* SteadKeep design tokens */
 :root {
   color-scheme: light dark;
-  --color-accent: #5b57df; /* PLACEHOLDER FINAL COLOR */
-  --color-accent-strong: #4541c6; /* PLACEHOLDER FINAL COLOR */
-  --color-accent-soft: #e8e7ff; /* PLACEHOLDER FINAL COLOR */
+  --color-accent: #5b57df;
+  --color-accent-strong: #4541c6;
+  --color-accent-soft: #e8e7ff;
   --color-success: #2f9b67;
   --color-ink: #15151b;
   --color-muted: #686976;
@@ -235,9 +232,7 @@ button {
   font-size: 0.9rem;
 }
 
-.placeholder-tag,
-.verify-badge,
-.publish-note {
+.verify-badge {
   border: 1px solid rgba(194, 110, 0, 0.28);
   border-radius: 999px;
   background: rgba(255, 166, 0, 0.12);
@@ -249,18 +244,7 @@ button {
   text-transform: uppercase;
 }
 
-.placeholder-tag {
-  padding: 4px 6px;
-}
-
-.publish-note {
-  display: inline-block;
-  padding: 7px 10px;
-}
-
-[data-theme="dark"] .placeholder-tag,
-[data-theme="dark"] .verify-badge,
-[data-theme="dark"] .publish-note {
+[data-theme="dark"] .verify-badge {
   color: #ffc46d;
 }
 
@@ -839,8 +823,7 @@ h3 {
   padding: 7px 9px;
 }
 
-.legal-note,
-.privacy-placeholder {
+.legal-note {
   border-left: 3px solid #e29122;
   padding-left: 14px;
   color: var(--color-muted);
@@ -869,11 +852,6 @@ h3 {
 
 .privacy-card h2 {
   max-width: 760px;
-}
-
-.privacy-card .privacy-placeholder {
-  max-width: 780px;
-  color: color-mix(in srgb, var(--color-canvas) 72%, transparent);
 }
 
 .privacy-mark {
@@ -1019,11 +997,6 @@ h3 {
   cursor: pointer;
 }
 
-.placeholder-inline {
-  color: #b36400;
-  font-weight: 700;
-}
-
 /* Legal and support pages */
 .page-hero {
   padding: 82px 0 46px;
@@ -1043,7 +1016,7 @@ h3 {
   font-size: 1.15rem;
 }
 
-.draft-banner {
+.effective-date-banner {
   padding: 18px 20px;
   margin: 0 0 46px;
   border: 1px solid rgba(208, 127, 19, 0.3);
@@ -1052,7 +1025,7 @@ h3 {
   color: var(--color-ink);
 }
 
-.draft-banner strong {
+.effective-date-banner strong {
   display: block;
   margin-bottom: 4px;
 }
@@ -1122,14 +1095,6 @@ h3 {
   border-radius: 5px;
   background: var(--color-accent-soft);
   color: var(--color-ink);
-}
-
-.placeholder-block {
-  padding: 18px;
-  border: 1px dashed #d08013;
-  border-radius: var(--radius-sm);
-  background: rgba(255, 166, 0, 0.07);
-  color: var(--color-ink) !important;
 }
 
 .support-cards {

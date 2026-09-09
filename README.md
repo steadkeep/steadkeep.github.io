@@ -17,9 +17,7 @@ A dependency-free static website for the SteadKeep iPhone app. It uses semantic 
 │   └── main.js
 └── assets/
     ├── icons/
-    │   ├── app-icon-placeholder.svg
-    │   ├── apple-touch-icon-placeholder.svg
-    │   └── favicon-placeholder.svg
+    │   └── app-icon.png
     ├── screenshots/
     │   ├── 01_today_hero.png
     │   ├── 02_progress.png
@@ -27,8 +25,6 @@ A dependency-free static website for the SteadKeep iPhone app. It uses semantic 
     │   ├── 04_personalities.png
     │   ├── 05_widget.png
     │   └── 06_alldone.png
-    └── social/
-        └── og-image-placeholder.svg
 ```
 
 The six screenshots are the existing Claude-generated assets copied from `/Users/robertblair/Desktop/SteadKeep Screenshots`. They are not mockups invented for this website.
@@ -50,38 +46,25 @@ No build command, package manager, or dependency install is required.
 
 - Homepage product copy: `index.html`, between the section comments and headings.
 - Support guidance: `support.html`.
-- Draft privacy structure: `privacy.html`.
-- Draft terms structure: `terms.html`.
+- Privacy policy: `privacy.html`.
+- Terms of use: `terms.html`.
 - Colors, typography, spacing, and component styles: the design-token block at the top of `css/styles.css`.
 - Mobile menu, current year, and theme switch: `js/main.js`.
 
-Search for `PLACEHOLDER`, `REPLACE`, `CONFIRM`, `VERIFY`, and `LEGAL REVIEW` before publishing.
-
-## Replace the App Store URL
-
-The placeholder URL is:
-
-```text
-https://apps.apple.com/app/id0000000000
-```
-
-Replace every occurrence in all `.html` files with the final App Store product URL. A simple editor-wide find and replace is safest. The visible “URL placeholder” labels can then be removed.
+The site currently presents SteadKeep as coming soon. Once App Store Connect provides the
+numeric Apple ID, replace the non-interactive “Coming soon” labels with the final product URL.
 
 ## Replace visual assets
 
 ### App icon and favicons
 
-The files in `assets/icons/` are deliberate placeholders. Replace them with final approved exports and either keep the filenames or update every HTML reference.
-
-Recommended:
-
-- App icon: SVG or optimized PNG, at least 256 × 256.
-- Apple touch icon: 180 × 180 PNG.
-- Favicon: SVG plus optional 32 × 32 and 16 × 16 PNG fallbacks.
+`assets/icons/app-icon.png` is the final 1024 × 1024 app icon copied from the Xcode asset
+catalog and is used for the site brand, favicon, Apple touch icon, and social metadata.
 
 ### Social sharing image
 
-Replace `assets/social/og-image-placeholder.svg` with a final 1200 × 630 PNG or JPEG. Update the `og:image` path in every public page if the filename changes. Once the production domain is known, consider using an absolute URL for maximum crawler compatibility.
+Public pages currently use the final app icon at an absolute production URL for social
+metadata. A dedicated 1200 × 630 campaign image can be added later without blocking launch.
 
 ### Screenshots
 
@@ -116,22 +99,12 @@ The configured production domain is `steadkeep.app`.
 - Update Open Graph image URLs and add canonical URLs before the final public
   launch.
 
-## Required pre-publication checklist
+## Remaining launch checklist
 
-- Replace every App Store URL and remove its visible placeholder labels.
-- Confirm that `support@steadkeep.app` forwards correctly to the dedicated support inbox.
-- Replace all app icon, favicon, Apple touch icon, and social image placeholders.
-- Confirm the final color palette in the CSS variables.
-- Have the Privacy Policy reviewed and replace every privacy placeholder.
-- Have the Terms reviewed and replace every legal placeholder.
-- Confirm the exact Premium features against the released binary and App Store product.
-- Add effective dates to Privacy and Terms.
-- Add the legal business or developer name and any required address/contact details.
-- Confirm the iOS minimum version and current product availability.
-- Decide whether Privacy and Terms should remain `noindex`; remove that meta tag only when the final documents are approved.
-- Confirm the homepage privacy wording matches the final policy and App Store privacy questionnaire.
-- Confirm the free three-habit limit and all public feature statements still match the release build.
-- Test every page after the final replacements.
+- Confirm that `support@steadkeep.app` forwards correctly to the support inbox.
+- Add the final App Store product URL after Apple assigns the numeric ID.
+- Recheck public feature statements whenever the release build changes.
+- Test every page after future content changes.
 
 ## Accessibility and performance notes
 
@@ -148,7 +121,7 @@ The configured production domain is `steadkeep.app`.
 From the project directory:
 
 ```bash
-rg -n 'PLACEHOLDER|REPLACE|CONFIRM|VERIFY|LEGAL REVIEW|id0000000000' .
+rg -n 'TODO|FIXME|id0000000000' .
 ```
 
 Run a local server and check the homepage at narrow phone widths, tablet width, and desktop width in current Safari, Chrome, Firefox, and Edge before publishing.

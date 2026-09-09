@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy Draft — SteadKeep</title>
-  <meta name="description" content="Draft privacy policy structure for the SteadKeep iPhone habit tracker. Statements require confirmation before publishing.">
-  <meta name="robots" content="noindex">
+  <title>Privacy Policy — SteadKeep</title>
+  <meta name="description" content="Learn how the SteadKeep iPhone habit tracker handles app data, iCloud sync, purchases, and support communications.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Privacy Policy Draft — SteadKeep">
-  <meta property="og:description" content="Draft privacy policy structure. Statements require confirmation before publishing.">
-  <meta property="og:image" content="assets/social/og-image-placeholder.svg">
-  <link rel="icon" href="assets/icons/favicon-placeholder.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-placeholder.svg">
+  <meta property="og:title" content="Privacy Policy — SteadKeep">
+  <meta property="og:description" content="Learn how SteadKeep handles app data, iCloud sync, purchases, and support communications.">
+  <meta property="og:image" content="https://steadkeep.app/assets/icons/app-icon.png">
+  <link rel="canonical" href="https://steadkeep.app/privacy.html">
+  <link rel="icon" href="assets/icons/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/app-icon.png">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -20,7 +20,7 @@
   <header class="site-header" data-site-header>
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="SteadKeep home">
-        <img src="assets/icons/app-icon-placeholder.svg" width="42" height="42" alt="">
+        <img src="assets/icons/app-icon.png" width="42" height="42" alt="">
         <span>SteadKeep</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
@@ -30,7 +30,7 @@
         <a href="index.html#features">Features</a>
         <a href="support.html">Support</a>
         <a href="terms.html">Terms</a>
-        <a class="button button-small" href="https://apps.apple.com/app/id0000000000" data-placeholder-link rel="noopener">App Store <span class="placeholder-tag">URL placeholder</span></a>
+        <span class="button button-small" aria-label="SteadKeep is coming soon to the App Store">Coming soon</span>
       </nav>
     </div>
   </header>
@@ -38,16 +38,15 @@
   <main id="main-content">
     <header class="page-hero">
       <div class="container page-hero-inner">
-        <p class="eyebrow">Legal draft</p>
+        <p class="eyebrow">Legal</p>
         <h1>Privacy Policy</h1>
-        <p>A structured starting point for review—not a publishable statement of SteadKeep’s data practices.</p>
+        <p>How SteadKeep handles app data, iCloud sync, purchases, and support communications.</p>
       </div>
     </header>
 
     <div class="container">
-      <aside class="draft-banner" role="note">
-        <strong>Draft only — do not publish as final.</strong>
-        Every data-practice statement below must be confirmed against the released build, App Store privacy answers, Apple services used, and applicable law. Effective date: <span class="placeholder-inline">[EFFECTIVE DATE]</span>.
+      <aside class="effective-date-banner" role="note">
+        <strong>Effective date:</strong> September 9, 2026
       </aside>
     </div>
 
@@ -68,61 +67,63 @@
       <article class="prose">
         <section id="overview">
           <h2>1. Overview</h2>
-          <p class="placeholder-block">[CONFIRM] <span class="placeholder-inline">[LEGAL BUSINESS OR DEVELOPER NAME]</span> (“we,” “us,” or “our”) provides SteadKeep. This policy should explain what information the released app and website process, why, where it is stored, and the choices available to users.</p>
+          <p>Robert Blair ("we," "us," or "our") makes SteadKeep, a habit and task tracker for iPhone. This Privacy Policy explains how the app and website handle information. The app has no user accounts, ads, analytics, or third-party tracking, and we operate no app backend that receives your habits or tasks.</p>
         </section>
 
         <section id="scope">
           <h2>2. Scope</h2>
-          <p class="placeholder-block">[CONFIRM] State whether this policy covers the SteadKeep iPhone app, this marketing website, support communications, and any future services. Identify anything expressly excluded.</p>
+          <p>This policy covers the SteadKeep iPhone app, this website (steadkeep.app), and email you send to our support address. It does not cover Apple's services (such as iCloud and the App Store), which are governed by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>, or any third-party website we may link to.</p>
         </section>
 
         <section id="data">
           <h2>3. Information and data practices</h2>
           <h3>Habit and task content</h3>
-          <p class="placeholder-block">[CONFIRM] Describe the habit names, schedules, completion history, notes, task information, preferences, custom photos, and other content the app may store. Confirm whether any of it is accessible to the developer.</p>
+          <p>The habits, tasks, schedules, completion history, notes, streaks, points, settings, and any custom photo icons you create are stored on your device. This content is yours. We cannot see it — there is no account to sign in to and no server operated by us ever receives it.</p>
           <h3>Device storage and iCloud</h3>
-          <p class="placeholder-block">[CONFIRM] The current source uses SwiftData/CloudKit, iCloud key-value storage, and an App Group for widgets. Explain accurately which data is stored on-device, which data may sync through the user’s private iCloud account, and which Apple terms govern that processing.</p>
+          <p>SteadKeep stores your data locally on your device using Apple's on-device database (SwiftData). If you are signed in to iCloud, that data also syncs across your own Apple devices through Apple's iCloud service (CloudKit), held in your private iCloud database. A small set of preferences syncs through Apple's iCloud key-value storage, and a snapshot of your current progress is shared with the SteadKeep home-screen widget on your device through an app group. All of this stays within your device and your own private iCloud account. This sync is provided and secured by Apple; we cannot see or access the contents of your iCloud data. Apple's handling of iCloud data is governed by Apple's Privacy Policy.</p>
           <h3>Analytics, diagnostics, and tracking</h3>
-          <p class="placeholder-block">[CONFIRM] The current privacy manifest declares no tracking and no collected data types, but this must be checked against the final binary, App Store Connect configuration, Apple-provided diagnostics, the website host, and any added tooling. Do not state “no data collected” until that review is complete.</p>
+          <p>SteadKeep contains no analytics, no advertising, and no third-party tracking libraries or software development kits (SDKs). It does not track you across other apps or websites and does not share data with data brokers. The app's privacy manifest declares no tracking and no collected data types.</p>
           <h3>Support communications</h3>
-          <p class="placeholder-block">[CONFIRM] Explain what information is received when someone emails support, how it is used, and how long it is retained.</p>
+          <p>If you email <a href="mailto:support@steadkeep.app">support@steadkeep.app</a>, we receive your email address and whatever you include in your message, and we use it only to respond to and resolve your inquiry. We keep support email only as long as needed for that purpose and reasonable record-keeping, then delete it.</p>
+          <h3>Website hosting</h3>
+          <p>This website is hosted with GitHub Pages. GitHub may process limited technical information, such as IP addresses and browser or request data, to provide and secure its hosting service. We do not add analytics, advertising, cookies, or tracking scripts to this site. GitHub's processing is governed by the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
         </section>
 
         <section id="apple-services">
           <h2>4. Apple services and purchases</h2>
-          <p class="placeholder-block">[CONFIRM] The app uses Apple technologies including iCloud/CloudKit, local notifications, widgets, Photo Library selection for custom habit icons, and StoreKit for Premium. Describe each accurately and link to Apple’s relevant privacy information if counsel recommends it.</p>
-          <p class="placeholder-block">[CONFIRM] State whether purchase information beyond entitlement status is received or stored by the developer. Do not imply access to Apple payment details unless verified.</p>
+          <p>SteadKeep relies on Apple technologies to function: iCloud/CloudKit (optional private sync), local notifications (reminders generated entirely on your device), home-screen widgets, the iOS photo picker (used only for the single image you choose as a habit icon — we do not request access to your photo library), and StoreKit (for the optional Premium purchase). Each operates under Apple's terms.</p>
+          <p>The optional Premium upgrade is one non-consumable App Store purchase processed by Apple. We never receive your card number or other payment details. The app receives StoreKit transaction and entitlement information needed to unlock Premium and restore the purchase.</p>
         </section>
 
         <section id="retention">
           <h2>5. Retention and deletion</h2>
-          <p class="placeholder-block">[CONFIRM] Explain retention for app content, iCloud-synced data, widget snapshots, preferences, and support emails. Describe what happens when a habit is deleted, the app is removed, or iCloud data is deleted.</p>
+          <p>Your data remains available until you remove it. Deleting a habit or task removes it from the app. Deleting SteadKeep removes the data stored on that device. To remove data synced to iCloud, delete it within the app on a signed-in device, or manage SteadKeep's iCloud storage in the iOS Settings app under your Apple Account → iCloud. Because we hold none of your content on our own servers, there is nothing for us to delete on your behalf; support email you send us is deleted as described above.</p>
         </section>
 
         <section id="choices">
           <h2>6. Your choices</h2>
           <ul>
-            <li class="placeholder-block">[CONFIRM] How users can change notification permission in iOS Settings.</li>
-            <li class="placeholder-block">[CONFIRM] How users can manage iCloud access and delete app data.</li>
-            <li class="placeholder-block">[CONFIRM] How users can remove a custom habit photo.</li>
-            <li class="placeholder-block">[CONFIRM] Any legal privacy rights and the process for exercising them.</li>
+            <li><strong>Notifications:</strong> grant or revoke permission any time in iOS Settings → Notifications → SteadKeep.</li>
+            <li><strong>iCloud sync:</strong> turn SteadKeep's iCloud sync on or off, and delete app data, in iOS Settings under your Apple Account → iCloud.</li>
+            <li><strong>Custom habit photo:</strong> change or remove it by editing the habit; the image is stored only with your habit data.</li>
+            <li><strong>Statutory rights:</strong> because we do not hold your personal content, most requests are handled directly on your device and through Apple. See the EU/UK note below.</li>
           </ul>
+          <p><strong>EU/UK users (GDPR / UK GDPR).</strong> For the limited processing described above (support email), the data controller is Robert Blair, reachable at <a href="mailto:support@steadkeep.app">support@steadkeep.app</a>. You may request access to, correction of, or deletion of that correspondence, and you may lodge a complaint with your local supervisory authority (in France, the <a href="https://www.cnil.fr/" rel="noopener">CNIL</a>). We do not use your data for automated decision-making or profiling, and we do not sell it or transfer it to third parties.</p>
         </section>
 
         <section id="children">
           <h2>7. Children’s privacy</h2>
-          <p class="placeholder-block">[LEGAL REVIEW REQUIRED] Add an age-related statement appropriate to the app’s audience, App Store age rating, distribution regions, and applicable law. Do not assume a standard age threshold.</p>
+          <p>SteadKeep is a general-audience productivity app and is not directed to children under 13. The app requires no account and does not send habit or task content to us. If you believe a child has sent personal information to support, contact us and we will delete it.</p>
         </section>
 
         <section id="changes">
           <h2>8. Changes to this policy</h2>
-          <p class="placeholder-block">[CONFIRM] Explain how policy updates will be communicated and how the effective date will be maintained.</p>
+          <p>If this policy changes, we will post the updated version here and revise the "Effective date" shown above. Where required, material changes will be reflected before they take effect.</p>
         </section>
 
         <section id="contact">
           <h2>9. Contact</h2>
-          <p>Privacy questions can be sent to <a href="mailto:support@steadkeep.app">support@steadkeep.app</a>.</p>
-          <p class="placeholder-block">[REPLACE] Legal name, postal address if required, and any jurisdiction-specific privacy contact details.</p>
+          <p>Privacy questions can be sent to <a href="mailto:support@steadkeep.app">support@steadkeep.app</a>. Data controller: Robert Blair. Publisher details are available in the <a href="mentions-legales.html">legal notice</a>.</p>
         </section>
       </article>
     </div>
@@ -130,9 +131,9 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><a class="brand footer-brand" href="index.html"><img src="assets/icons/app-icon-placeholder.svg" width="38" height="38" alt=""><span>SteadKeep</span></a><p>Focused habit tracking for iPhone.</p></div>
-      <nav aria-label="Footer navigation"><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="https://apps.apple.com/app/id0000000000" data-placeholder-link rel="noopener">App Store <span class="sr-only">(placeholder URL)</span></a></nav>
-      <div class="footer-meta"><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme"><span aria-hidden="true">◐</span> Theme</button><p>© <span data-current-year>2026</span> <span class="placeholder-inline">[LEGAL NAME]</span></p></div>
+      <div><a class="brand footer-brand" href="index.html"><img src="assets/icons/app-icon.png" width="38" height="38" alt=""><span>SteadKeep</span></a><p>Focused habit tracking for iPhone.</p></div>
+      <nav aria-label="Footer navigation"><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="mentions-legales.html">Mentions légales</a><span>App Store coming soon</span></nav>
+      <div class="footer-meta"><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme"><span aria-hidden="true">◐</span> Theme</button><p>© <span data-current-year>2026</span> Robert Blair</p></div>
     </div>
   </footer>
 </body>

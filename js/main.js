@@ -74,7 +74,4 @@
       themeToggle.setAttribute("aria-label", `Switch to ${currentDark ? "dark" : "light"} theme`);
     });
   }
-
-  // Placeholder App Store links are intentionally left clickable for layout
-  // testing. Their visible labels and README checklist flag replacement.
 })();

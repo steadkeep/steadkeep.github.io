@@ -17,7 +17,9 @@ A dependency-free static website for the SteadKeep iPhone app. It uses semantic 
 │   └── main.js
 └── assets/
     ├── icons/
-    │   └── app-icon.png
+    │   ├── brand-mark.svg
+    │   ├── apple-touch-icon.svg
+    │   └── favicon.svg
     ├── screenshots/
     │   ├── 01_today_hero.png
     │   ├── 02_progress.png
@@ -56,15 +58,15 @@ numeric Apple ID, replace the non-interactive “Coming soon” labels with the 
 
 ## Replace visual assets
 
-### App icon and favicons
+### Brand mark and favicons
 
-`assets/icons/app-icon.png` is the final 1024 × 1024 app icon copied from the Xcode asset
-catalog and is used for the site brand, favicon, Apple touch icon, and social metadata.
+The site uses interim brand artwork in `assets/icons/` while the official app icon is being
+designed. Replace these files only after the official icon is approved.
 
 ### Social sharing image
 
-Public pages currently use the final app icon at an absolute production URL for social
-metadata. A dedicated 1200 × 630 campaign image can be added later without blocking launch.
+Public pages use the interim `assets/social/social-card.svg`. Replace it with the approved
+launch artwork before the final marketing launch.
 
 ### Screenshots
 
@@ -102,6 +104,7 @@ The configured production domain is `steadkeep.app`.
 ## Remaining launch checklist
 
 - Confirm that `support@steadkeep.app` forwards correctly to the support inbox.
+- Replace the interim site brand and social artwork after the official app icon is approved.
 - Add the final App Store product URL after Apple assigns the numeric ID.
 - Recheck public feature statements whenever the release build changes.
 - Test every page after future content changes.
